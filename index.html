@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive-page</title>
     <link rel="stylesheet" href="/assets/style.css">
+     <!-- <link rel="stylesheet" href="/assets/new.css"> -->
 </head>
 <body>
     <header class="header">
         <a href="#" class="logo">Manish singh</a>
         <ion-icon name="menu-outline" class="toggle"></ion-icon>
         <nav class="nav">
-            <div class="nav-content">
+            <div class="nav-content grid">
                 <ion-icon name="close-outline" class="menu"></ion-icon>
-                <img src="my.png" alt="">
-                <a href="#" class="name">manish singh</a>
+                <img src="/assets/my.png" alt="" class="img1">
+                <a href="#" class="name-m">manish singh</a>
                 <div class="gap"></div>
                 <span class="span">Web developer</span>
                 <ul>
@@ -25,13 +26,24 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
                 <div class="gap"></div>
-                <div class="social">
-                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                <div class="social" id="social">
+                    <a href="#" class="social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="#" class="social-icon"><ion-icon name="logo-github"></ion-icon></a>
                 </div>
             </div>
         </nav>
     </header>
+    <main class="l-main">
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Manish</span><br> Web Developer</h1><br>
+                <button>CONTACT</button>
+            </div>
+            <div class="home__img">
+                <img src="/assets/ṃy.jpg" alt="" class="home__blob-img">
+            </div>
+        </section>
+    </main>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
