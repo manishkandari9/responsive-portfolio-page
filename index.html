@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive-page</title>
-    <link rel="stylesheet" href="/assets/style.css">
-     <!-- <link rel="stylesheet" href="/assets/new.css"> -->
+<link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
     <header class="header">
         <a href="#" class="logo">Manish singh</a>
-        <ion-icon name="menu-outline" class="toggle"></ion-icon>
-        <nav class="nav">
+        <ion-icon name="menu-outline" class="toggle" id="toggle"></ion-icon>
+        <nav class="nav" id="nav-menu">
             <div class="nav-content grid">
-                <ion-icon name="close-outline" class="menu"></ion-icon>
-                <img src="/assets/my.png" alt="" class="img1">
-                <a href="#" class="name-m">manish singh</a>
-                <div class="gap"></div>
-                <span class="span">Web developer</span>
-                <ul>
+                <ion-icon name="close-outline" class="menu" id="nav-close"></ion-icon>
+                <div class="namie">
+                    <img src="/assets/img/my.png" alt="" class="img1">
+                    <a href="#" class="name-m">Manish singh</a>
+                    <span class="span">Web developer</span>
+                </div>
+                <ul id="nav-list">
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <div class="gap"></div>
                 <div class="social" id="social">
                     <a href="#" class="social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
                     <a href="#" class="social-icon"><ion-icon name="logo-github"></ion-icon></a>
@@ -40,11 +39,53 @@
                 <button>CONTACT</button>
             </div>
             <div class="home__img">
-                <img src="/assets/ṃy.jpg" alt="" class="home__blob-img">
+                <img src="/assets/img/my.jpg" alt="" class="home-img">
             </div>
         </section>
+
+        <section class="about-section">
+            <h2 class="section-title">About</h2>
+            <div class="about-container bd-grid">
+                <div class="about-image">
+                    <img src="/assets/img/my.jpg" alt="">
+                </div>
+
+                <div>
+                    <h2 class="subtitle">I'm manish</h2>
+                    <p class="about-text"> 
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="Skills-section">
+            <h2 class="section-title">SKILLS</h2>
+            <div class="skills-container bd-grid">
+                <div>
+
+                </div>
+            </div>
+        </section>
+        <section class="Contact-section">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-container bd-grid">
+                <form action="" class="contact-form">
+                    <input type="text" placeholder="Name" class="Contact-input">
+                    <input type="mail" placeholder="Email" class="Contact-input">
+                    <input type="button" placeholder="button" class="Contact-button">
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="footer-title">Manish</p>
+            <div class="footer-social">
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            </div>
+            <p class="footer-copy">&#169; All rights reserved</p>
+        </footer>
     </main>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 </html> 
