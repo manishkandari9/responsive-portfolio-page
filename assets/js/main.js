@@ -6,7 +6,6 @@ const closeButton = document.getElementById('nav-close');
 toggleButton.addEventListener('click', () => {
   navMenu.classList.toggle('show');
   });
-//  hidden
   closeButton.addEventListener('click', () => {
     navMenu.classList.remove('show');
     });

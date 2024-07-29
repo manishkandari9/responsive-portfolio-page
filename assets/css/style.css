@@ -391,9 +391,9 @@ ul {
       0% {content: "M";}
       10% {content: "Ma";}
       20% {content: "Man";}
-      30% {content: "Mani";}
-      40% {content: "Manis";}
-      50% {content: "Manish";}
+      50% {content: "Mani";}
+      80% {content: "Manis";}
+      100% {content: "Manish";}
       /* 60% {content: "Develop";}
       70% {content: "Develope";}
       80% {content: "Developer.";}
@@ -411,6 +411,18 @@ ul {
   grid-template-columns: 1fr 2fr;
   gap: 20px;
 }
+.work-container{
+  background-color: red;
+  position: relative;
+  z-index: 1;
+}
+.work-cards::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  z-index: -1;
+}
 .work-content{
   display: grid;
   justify-content: center;
@@ -420,14 +432,19 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  /* background-color: red; */
 }
 .card {
   background-color: #fff;
+  width: 25rem;
+  height: 20rem;
   padding: 20px;
   border: 1px solid #ddd;
+  z-index: -1;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+  position: relative;
+} 
 .card h4 {
   font-size: 18px;
   font-weight: bold;
@@ -437,6 +454,29 @@ ul {
 .card p {
   font-size: 16px;
   color: #666;
+}
+.timeline{
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+.container{
+  padding: 10px 50px;
+  width: 50%;
+  background: #14e314;
+}
+.text-box{
+  padding: 20px 30px;
+  background: #fff;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.left-container{
+  left: 0;
+}
+.right-container{
+  left: 10%;
 }
     @media (width < 750px ){
     .home-text{
