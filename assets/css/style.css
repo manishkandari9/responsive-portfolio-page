@@ -400,85 +400,42 @@ ul {
       90% {content: "Developer..";}
       100% {content: "Developer...";} */
     }
-.work {
-  padding: 100px 0;
-}
+/* .works{
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* } */
 .work-container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
-}
-.work-container{
-  background-color: red;
-  position: relative;
-  z-index: 1;
-}
-.work-cards::before{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  z-index: -1;
-}
-.work-content{
-  display: grid;
-  justify-content: center;
-}
-.work-cards {
-  grid-column: 3;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  /* background-color: red; */
+  align-items: center;
+  gap: 2.5rem;
 }
-.card {
-  background-color: #fff;
-  width: 25rem;
-  height: 20rem;
-  padding: 20px;
-  border: 1px solid #ddd;
-  z-index: -1;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-} 
-.card h4 {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
+
+.work {
+  border: 1px solid;
+  padding: 1rem;
+  background-color: var(--black-color);
+  text-align: center;
+  border-radius: 15px;
+  transition: border-color 0.3s ease-in-out;
+  animation: rgbBorder 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card p {
-  font-size: 16px;
-  color: #666;
-}
-.timeline{
-  position: relative;
-  max-width: 1200px;
-  margin: 100px auto;
-}
-.container{
-  padding: 10px 50px;
-  width: 50%;
-  background: #14e314;
-}
-.text-box{
-  padding: 20px 30px;
-  background: #fff;
-  position: relative;
-  border-radius: 6px;
-  font-size: 15px;
-}
-.left-container{
-  left: 0;
-}
-.right-container{
-  left: 10%;
-}
-    @media (width < 750px ){
+.work:hover{
+   border-color: #05e9f1;
+  }
+  .work::before{
+    content: "";
+    position: absolute;
+    top: 0;
+  }
+  .work h2 {
+    color: var(--white-color);
+    font-size: 1.5rem;
+  }
+  @media (width < 750px ){
     .home-text{
       padding: 10rem 1rem 4rem 1rem;
       text-align: center;
@@ -505,6 +462,17 @@ ul {
     .about-container{
       text-align: center;
       grid-template-columns: repeat(1, 1fr);
+    }
+    .works{
+      padding: 1rem;
+    }
+    .work-container{
+      grid-template-columns: repeat(1,1fr);
+      gap: 1.5;
+    }
+    .work{
+      width: 100%;
+      height: ;
     }
   }
   @media screen and (min-width: 992px) {
