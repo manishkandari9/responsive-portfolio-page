@@ -516,8 +516,28 @@ ul {
 .work:hover .view-detail {
     display: block;
 }
-.contact{
-  display: flex;
-  flex-direction: row;
-
+.contact__input {
+  width: 100%;
+  font-size: .898em;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid var(--second-color);
+  outline: none;
+  margin-bottom: 2rem;
+}
+.contact__button {
+  display: block;
+  border: none;
+  outline: none;
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+  margin-left: auto;
+}
+.form {
+  width: 360px;
+  padding-top: 2rem;
+}
+.contact {
+  justify-items: center;
 }
