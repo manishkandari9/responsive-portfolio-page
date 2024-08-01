@@ -26,6 +26,9 @@
 *, ::before, ::after {
     box-sizing: border-box;
   }
+  html{
+    scroll-behavior: smooth;
+  }
   body {  
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
@@ -330,6 +333,9 @@ ul {
       border-radius: 50%;
       border: 10px solid;
     }
+    .About{
+      padding: 3rem 0;
+    }
       .about-container {
        max-width: 1200px;
        display: grid;
@@ -388,7 +394,7 @@ ul {
       animation-duration: 1200ms;
       animation-iteration-count:infinite;
     }
-    @keyframes name{
+    @keyframes name {
       0% {content: "M";}
       10% {content: "Ma";}
       20% {content: "Man";}
@@ -396,15 +402,19 @@ ul {
       80% {content: "Manis";}
       100% {content: "Manish";}
     }   
-.work-container {
+
+.skills-container {
   max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
+.skills{
+  padding: 3rem 0;
+}
 /* #14151B; */
-.work {
+.skill {
   height: 15rem;
   position: relative;
   border: 1px solid;
@@ -415,7 +425,7 @@ ul {
   transition: trnsform 0.3s;
   animation: rgbBorder 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
 }
-.work:hover {
+.skill:hover {
   transform: scale(1.05);
 }
 
@@ -432,15 +442,15 @@ ul {
   font-size: 1rem;
 }
 
-.work:hover .view-detail {
+.skill:hover .view-detail {
   display: block;
   font-size: 1.2rem;
 }
-  .work h2 {
+  .skill h2 {
     color: var(--white-color);
     font-size: 1.5rem;
   }
-  .work p{
+  .skill p{
     font-size: 0.9rem;
   }
   @media (width < 750px ){
@@ -471,14 +481,14 @@ ul {
       text-align: center;
       grid-template-columns: repeat(1, 1fr);
     }
-    .works{
+    .skills{
       padding: 1rem;
     }
-    .work-container{
+    .skills-container{
       grid-template-columns: repeat(1,1fr);
       gap: 1.5;
     }
-    .work{
+    .skill{
       width: 100%;
     }
   }
@@ -488,7 +498,7 @@ ul {
       margin-right: auto;
     }
   }
-  .work {
+  .skill {
     position: relative;
     padding: 20px;
     border: 1px solid #ccc;
@@ -496,7 +506,7 @@ ul {
     transition: transform 0.3s;
 }
 
-.work:hover {
+.skill:hover {
     transform: scale(1.05);
 }
 
@@ -513,7 +523,7 @@ ul {
     font-size: 14px;
 }
 
-.work:hover .view-detail {
+.skill:hover .view-detail {
     display: block;
 }
 .contact__input {
@@ -540,4 +550,9 @@ ul {
 }
 .contact {
   justify-items: center;
+}
+.skill i{
+  font-size: 40px;
+  color: var(--white-color);
+  margin-bottom: 10px;
 }
