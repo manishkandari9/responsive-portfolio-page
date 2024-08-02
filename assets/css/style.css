@@ -121,7 +121,7 @@ ul {
   .menu {
     position: absolute;
     right: 1.5rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: .25rem;
     background-color: var(--dark-color-alt);
     border-radius: 50%;
@@ -330,8 +330,10 @@ ul {
     }
     .home_img img{
       width: min(25rem,90%);
+      filter: drop-shadow(0px 0px 5px rgb(7, 247, 255));
       border-radius: 50%;
-      border: 10px solid;
+      box-shadow: 0px 0px 20px rgb(7, 247, 255);
+      /* border: 5px solid; */
     }
     .About{
       padding: 3rem 0;
@@ -360,6 +362,7 @@ ul {
     .about-image img {
       width: 250px;
       border-radius: 0.5rem;
+      filter: drop-shadow(0px 0px 12px red);
     }
     .sp::after{
       content: '';
@@ -381,8 +384,8 @@ ul {
       60% {content: "Develop";}
       70% {content: "Develope";}
       80% {content: "Developer.";}
-      90% {content: "Developer..";}
-      100% {content: "Developer...";}
+      90% {content: "Developer.";}
+      100% {content: "Developer..";}
     }
     .nm::after{
       content: '';
@@ -448,10 +451,11 @@ ul {
 }
   .skill h2 {
     color: var(--white-color);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .skill p{
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 300;
   }
   @media (width < 750px ){
     .home-text{
@@ -470,12 +474,10 @@ ul {
       border-radius: 20px;
       transition: all 0.125s ease-in;
       border: 1px solid var(--dark-yellow-color);
-      background-color: var(--dark-yellow-color);
       color: var(--white-color);
     }
     button:hover{
       background-color: transparent;
-      color: var(--dark-yellow-color);
     }
     .about-container{
       text-align: center;
@@ -553,6 +555,6 @@ ul {
 }
 .skill i{
   font-size: 40px;
-  color: var(--white-color);
+  color: rgb(7, 247, 255);
   margin-bottom: 10px;
 }
