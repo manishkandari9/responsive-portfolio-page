@@ -508,6 +508,16 @@ ul {
     color: rgb(7, 247, 255);
     margin-bottom: 10px;
   }
+  .contact-section{
+    padding: 3rem 0;
+  }
+  .contact{
+    max-width: 1200px;
+    align-items: center;
+    gap: 2.5rem;
+    background-color: #14151B;
+    padding: 3rem;
+  }
   .contact__input {
     width: 100%;
     font-size: .898em;
@@ -520,12 +530,62 @@ ul {
   }
   .form {
     width: 360px;
-    padding-top: 2rem;
   }
   .contact {
     justify-items: center;
   }
-  
+  .send-me{
+    width: 9rem;
+    height: 2.5rem;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: var(--black-color);;
+    color: var(--white-color);
+    text-transform: uppercase;
+    border-radius: 20px;
+    transition: all 0.125s ease-in;
+    font-weight: 400;
+    font-size: 1rem;
+    animation: rgbBorder 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  }
+.footer {
+    background-color: var(--dark-blue-color);
+    color: var(--white-color);
+    padding: 2rem 0;
+    text-align: center;
+}
+.footer-container {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 5rem;
+}
+.footer-contact a{
+  font-size: 1rem;
+  font-weight: 300;
+
+}
+.footer-about h3{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.footer-contact h3{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.footer-about p{
+  font-size: 1rem;
+  font-weight: 300;
+}
+.footer-bottom {
+    margin-top: 2rem;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+}
+
+
   @media (width < 750px ){
     .home-text{
       padding: 10rem 1rem 4rem 1rem;
@@ -562,6 +622,18 @@ ul {
     .skill{
       width: 100%;
     }
+    .contact{
+      background-color: #14151B;
+      padding: 3rem;
+    }
+   .form{
+    width: 300px;
+   }
+   .footer-container{
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    gap: 2rem;
+   }
   }
   @media screen and (min-width: 992px) {
     .grid {
