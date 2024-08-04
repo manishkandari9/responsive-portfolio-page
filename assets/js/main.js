@@ -20,19 +20,6 @@ toggleButton.addEventListener('click', () => {
       }
       navLink.forEach(n => n.addEventListener('click', linkAction));
 
-      window.addEventListener('scroll', scrollActive)
-      const sr = scrollreveal({
-        origin:'top',
-        distance:'60px',
-        duration: '2000',
-        delay:200,
-        reset: true
-      });
-      sr.reveal('.home-text, .about-image, .skills__subtitle, .skills__text',{}); 
-      sr.reveal('.home_img, .subtitle1, .about-text, .skills__img',{delay: 400}); 
-      sr.reveal('.social',{ interval: 200}); 
-      sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
       
-
 
 
