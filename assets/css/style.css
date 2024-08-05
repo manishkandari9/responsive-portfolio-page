@@ -461,7 +461,7 @@ ul {
   position: absolute;
   bottom: 10px;
   background-color: transparent;
-  color: white;
+  color: var(--white-color);
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 1rem;
@@ -483,8 +483,9 @@ ul {
 .skill:hover .view-detail {
   display: block;
   transform: translateY(-30px);
-  font-size: 18px;
-  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--white-color);
 }
 .skill:hover i{
   opacity: 0;
@@ -572,7 +573,7 @@ ul {
   justify-content: center;
 }
 .footer-contact i{
-   color: rgb(7, 247, 255);
+   color: #07f7ff;
    font-size: 1.2rem;
 }
 .footer-about h3{

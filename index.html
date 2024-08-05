@@ -112,20 +112,23 @@
                     <h2> designer</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <div class="view-detail">view details
+                        <i class="fa fa-arrow-right fa-fade"></i >
                     </div>
                 </div>
             </section>
             <section class="contact-section" id="contact">
                 <h2 class="section-title">Contact</h2>
                 <div class="contact grid">
-                    <form action="" class="form">
-                        <label for="name">Name</label>
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <label for="mail">Email</label>
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <label for="Mesaage">Message</label>
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Mesaage" class="contact-button">
+                    <form action="index.php" method="post" class="form">
+                        <label id="name-label">Name</label>
+                        <input type="text" name="name" id="" placeholder="Enter Your Name" required class="contact__input">
+
+                        <label id="mail-lable">Email</label>
+                        <input type="mail" name="email" id="" placeholder="Enter Your Email" required class="contact__input">
+                        <label id="Mesaage-lable">Message</label>
+                        <textarea name="Mesaage" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <button type="submit" class="contact-button">submit</button>
+                        <!-- <input type="button" value="Mesaage" class="contact-button"> -->
                     </form>
                 </div>
             </section>
