@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio-pages</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="save.php">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -80,7 +81,7 @@
                     <i class='bx bxl-html5'></i>
                     <h2>HTML</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <div class="view-detail">view details</div> <!-- Icon for UI/UX -->
+                    <div class="view-detail"><a href="viewdetail.html">view detail</a></div>
                 </div>
                 <div class="skill">
                     <i class='bx bxl-css3' ></i>
@@ -119,14 +120,13 @@
             <section class="contact-section" id="contact">
                 <h2 class="section-title">Contact</h2>
                 <div class="contact grid">
-                    <form action="index.php" method="post" class="form">
+                    <form action="save.php" method="post" class="form">
                         <label id="name-label">Name</label>
                         <input type="text" name="name" id="" placeholder="Enter Your Name" required class="contact__input">
-
                         <label id="mail-lable">Email</label>
                         <input type="mail" name="email" id="" placeholder="Enter Your Email" required class="contact__input">
                         <label id="Mesaage-lable">Message</label>
-                        <textarea name="Mesaage" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <textarea name="Message" id="" cols="0" rows="10" class="contact__input"></textarea>
                         <button type="submit" class="contact-button">submit</button>
                         <!-- <input type="button" value="Mesaage" class="contact-button"> -->
                     </form>

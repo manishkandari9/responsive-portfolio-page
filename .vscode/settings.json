@@ -56,5 +56,20 @@
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
-  "liveServer.settings.port": 5502
+  "liveServer.settings.port": 5503,
+  "php.completion.showParameters": false,
+  "php.docblock.packageSnippet": {
+
+  },
+  "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
+  "php.validate.enable": true,
+  "php.completion.autoimport-docblock": "auto-import",
+  "php.debug.port": [
+    "auto",
+  ],
+  "npm.enableRunFromFolder": true,
+  "livePreview.debugOnExternalPreview": true,
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+  "fiveServer.php.executable": "C:\\xampp\\php\\php.exe",
+  "php.suggest.basic": true,
 }
