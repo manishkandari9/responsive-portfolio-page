@@ -56,7 +56,7 @@
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
-  "liveServer.settings.port": 5503,
+  "liveServer.settings.port": 5504,
   "php.completion.showParameters": false,
   "php.docblock.packageSnippet": {
 

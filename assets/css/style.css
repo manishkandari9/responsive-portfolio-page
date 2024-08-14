@@ -56,6 +56,7 @@ ul {
   .section-title{
     position: relative;
     font-size: 1.5rem;
+    font-weight: 440;
     color: var(--white-color);
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -93,7 +94,7 @@ ul {
       }
   }
   .grid{
-    max-width: 1024px;
+    max-width: 1100px;
     display: grid;
     grid-template-columns: 100%;
     margin-left: 1.5rem;
@@ -362,6 +363,8 @@ ul {
     /* about section */
     .About{
       padding: 3rem 0;
+      /* background-color: #14151B; */
+
     }
       .about-container {
        max-width: 1200px;
@@ -433,9 +436,12 @@ ul {
      /*skills  section */
     .skills{
       padding: 3rem 0;
+      background-color: #14151B;
+      border:1px solid var(--white-color);
+      border-radius: 5px;
     }
 .skills-container {
-  max-width: 1200px;
+  max-width: 1024px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -445,13 +451,13 @@ ul {
   height: 15rem;
   padding: 20px;
   position: relative;
-  border: 1px solid;
-  background-color: #141313;
+  border: 1px solid #07f7ff;;
+  background-color: #000000;
   text-align: center;
   border-radius: 15px;
   transition: trnsform 0.3s;
   transition: all 0.3s ease-in-out;
-  animation: rgbBorder 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  /* animation: rgbBorder 3s infinite cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .skill:hover {
     transform: translateY(-10px);
@@ -507,7 +513,7 @@ ul {
   }
   .skill i{
     font-size: 40px;
-    color: rgb(7, 247, 255);
+    color: #07f7ff;
     margin-bottom: 10px;
   }
   /* contact section */
