@@ -676,10 +676,10 @@ animation: social 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
       transition: all 0.125s ease-in;
       border: 1px solid var(--dark-yellow-color);
       color: var(--white-color);
-    }
-    button:hover{
+      &:hover{
       background-color: transparent;
     }
+  }
     .about-container{
       text-align: center;
       grid-template-columns: repeat(1, 1fr);
