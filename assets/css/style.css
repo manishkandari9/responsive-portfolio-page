@@ -355,7 +355,7 @@ ul {
     }
     .home_img img{
       width: min(25rem,90%);
-      /* filter: drop-shadow(0px 0px 5px rgb(7, 247, 255)); */
+      filter: drop-shadow(0px 0px 5px rgb(7, 247, 255));
       border-radius: 50%;
       box-shadow: 0px 0px 20px rgb(7, 247, 255);
       object-fit: initial;
@@ -643,7 +643,7 @@ ul {
   }
   .contact-button::after{
     position: absolute;
-    background-color: red;
+    background-color: rgb(101, 10, 10);
     left: 0;
     right: 0;
   }
@@ -818,5 +818,8 @@ animation: social 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
       margin-left: auto;
       margin-right: auto;
     }
+  }
+  .view-backned{
+    background-color: red;
   }
  
