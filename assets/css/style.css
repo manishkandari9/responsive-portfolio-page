@@ -821,5 +821,8 @@ animation: social 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
   }
   .view-backned{
     background-color: red;
+    color: #000000;
+    text-shadow: #0000ff;
+    text-transform: capitalize;
   }
  
