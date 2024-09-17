@@ -355,7 +355,7 @@ ul {
     }
     .home_img img{
       width: min(25rem,90%);
-      filter: drop-shadow(0px 0px 5px rgb(7, 247, 255));
+      /* filter: drop-shadow(0px 0px 5px rgb(7, 247, 255)); */
       border-radius: 50%;
       box-shadow: 0px 0px 20px rgb(7, 247, 255);
       object-fit: initial;
@@ -380,9 +380,9 @@ ul {
       font-weight: 400;
     }
     .about-text{
-      font-weight: 200;
+      font-weight: 400;
       text-transform: capitalize;
-      font-size: 1rem;
+      font-size: 1em;
     }
     .about-image{
       justify-self: center;
@@ -437,12 +437,11 @@ ul {
     .skill{
       padding: 7rem 0;
     } 
-     /*skills  section */
      .skills__container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       justify-content: space-between;
-      /* gap: 5rem; */
+       gap: 5rem; 
       column-gap: 1rem;
       
     }
@@ -450,11 +449,12 @@ ul {
       margin-bottom: 1rem;
       color: #07f7ff;
       font-weight: 500;
-      font-size: 2rem;
+      font-size: 1.5em;
     }
     .skills__text {
       margin-bottom: 2rem;
-      font-size: 1.2rem;
+      font-size: 1em;
+      font-weight: 400;
 
     }
     .skills__data {
@@ -502,8 +502,7 @@ ul {
     .skills__img {
       border-radius: 0.5rem;
       width: 300px;
-      /* max-width: 100%; */
-      height: 380px;
+      height: 350px;
       display: block;
       margin-top: 6.5rem;
       box-shadow: 0px 4px 25px rgba(255, 255, 255, 0.15);
@@ -529,7 +528,7 @@ ul {
   height: 15rem;
   padding: 20px;
   position: relative;
-  border: 1px solid #07f7ff;;
+  border: 1px solid #07f7ff;
   background-color: #000000;
   text-align: center;
   border-radius: 15px;
@@ -748,6 +747,22 @@ animation: social 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
     .btn{
       margin: auto;
     }
+    home-title-color {
+      color: hsl(120, 84%, 48%);
+      font-weight: 400;
+      font-size: 1rem;
+    }
+    .home__title {
+      font-size: 1.7rem;
+      letter-spacing: 2.5px;
+      margin-bottom: 2rem;
+    }
+    .hello{
+      letter-spacing: 2px;
+      color: var(--white-color);
+      font-weight: 300;
+      font-size: 2rem;
+    }
     button{
       cursor: pointer;
       border-radius: 20px;
@@ -770,8 +785,9 @@ animation: social 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
     } */
     .skills__container {
       grid-template-columns: repeat(1, 1fr);
-      justify-content: center;
+      text-align: center;
       column-gap: 1rem;
+
     }
     .skills__subtitle {
       margin-bottom: 1rem;
@@ -786,6 +802,19 @@ animation: social 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
     .works-container{
       grid-template-columns: repeat(1,1fr);
       gap: 1.5;
+    }
+    #resimg {
+      max-width: 80%;
+      height: 300;
+      display: block;
+      align-items: center;
+      margin: 0 auto;
+    }
+    #resim{
+      align-items: center;
+      margin: 0 auto;
+      display: block;
+      max-width: 80%;
     }
     .work{
       width: 100%;
@@ -819,10 +848,10 @@ animation: social 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
       margin-right: auto;
     }
   }
-  .view-backned{
+  /* .view-backned{
     background-color: red;
     color: #000000;
     text-shadow: #0000ff;
     text-transform: capitalize;
-  }
+  } */
  
