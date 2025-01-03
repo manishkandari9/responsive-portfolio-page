@@ -1,7 +1,9 @@
+const { Cursor } = require("mongoose");
 
 const navMenu = document.getElementById('nav-menu');
 const toggleButton = document.getElementById('toggle');
 const closeButton = document.getElementById('nav-close');
+const show = document.getElementById("show");
 // show
 toggleButton.addEventListener('click', () => {
   navMenu.classList.toggle('show');
@@ -19,6 +21,11 @@ toggleButton.addEventListener('click', () => {
       navMenu.classList.remove('show');
       }
       navLink.forEach(n => n.addEventListener('click', linkAction));
+
+
+      show.addEventListener ("hover", () => {
+        show.show
+      })
 
       
 
