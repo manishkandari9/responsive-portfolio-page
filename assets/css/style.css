@@ -238,14 +238,14 @@ ul {
     ul {
       display: flex;
     }
-    li {
+    .lis {
       margin: 0 .25rem;
     }
-    li {
+    .lis {
       padding: .5rem .8rem;
       border-radius: .25rem;
     }
-    li:hover {
+    .lis:hover {
       background-color: var(--dark-yellow-color);
       color: var(--white-color);
     }
@@ -859,7 +859,7 @@ animation: social 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
  
   .resume-section {
     max-width: 1024px;
-    /* margin: 60px auto; */
+    margin: 60px auto;
     /* background: linear-gradient(135deg, #1c1e26, #14151b); */
     background-color: #14151B;
     /* border-radius: 12px; */
