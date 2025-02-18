@@ -960,9 +960,10 @@ h3 {
 
 /* Project Card */
 .card {
-  background: white;
+  background:  #252a44;
   border-radius: 1rem;
   overflow: hidden;
+  
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   
@@ -1010,12 +1011,12 @@ h3 {
 
 .card-title {
   font-size: 1.25rem;
-  color: #1a237e;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
 .card-description {
-  color: #546e7a;
+  color: #c0c7ca;
   font-size: 0.875rem;
   margin-bottom: 1rem;
 }
