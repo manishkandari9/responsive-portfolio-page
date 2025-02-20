@@ -188,7 +188,7 @@ ul {
     padding-top: .5rem;
   }
   .social-icon{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--white-color);
     margin-right: 1rem;
   }
@@ -928,9 +928,10 @@ animation: social 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
   gap: 40px;
   justify-content: center;
   padding: 2rem 1rem;
+  margin-top: 0;
 }
 
-.resume-info, .resume-highlights {
+.resume-info {
     flex: 1;
     min-width: 320px;
 }
@@ -967,28 +968,6 @@ p {
     box-shadow: 0 6px 16px rgba(255, 223, 0, 0.6);
 }
 
-h3 {
-    color: var(--dark-green-color);
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.unn {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  font-size: 1.1rem;
-  color: var(--white-color);
-}
-
-.list {
-  position: relative;
-  padding-left: 25px;
-  transition: transform 0.3s ease;
-}
 
 
 /* Responsive Design */
@@ -1136,7 +1115,7 @@ h3 {
 }
 
 .btnn:hover {
-  background-color: #840fd2;
+  background-color: #c9b5d6;
 }
 
 /* Responsive Design */
