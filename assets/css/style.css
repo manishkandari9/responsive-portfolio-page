@@ -1234,16 +1234,16 @@ p {
 .cl-button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #3498db;
+  background-color: #0470f3;
   color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
-  font-weight: 600;
+  font-weight: 400;
   transition: background-color 0.3s ease;
 }
 
 .cl-button:hover {
-  background-color: #2980b9;
+  background-color: #2f00ff;
 }
 
 @media screen and (max-width: 768px) {
