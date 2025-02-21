@@ -1202,12 +1202,12 @@ p {
 }
 
 .about-image img {
-  width: 60%;
+  width: 80%;
   height: auto;
   border-radius: 50%;
   /* background-color: white; */
   /* border-radius: 10px; */
-  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 10px 20px rgb(255, 255, 255);
 }
 
 .about-text {
@@ -1228,8 +1228,9 @@ p {
 .about-text p {
   font-size: 1.1rem;
   margin-bottom: 20px;
-  color: #555;
+  color: #807f7f;
 }
+
 
 .cl-button {
   display: inline-block;
@@ -1239,6 +1240,7 @@ p {
   text-decoration: none;
   border-radius: 5px;
   font-weight: 400;
+  margin-top: 1rem;
   transition: background-color 0.3s ease;
 }
 
