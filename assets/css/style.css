@@ -391,10 +391,10 @@ ul {
       justify-self: center;
     }
     .about-image img {
-      width: 250px;
+      width: 350px;
       border-radius: 0.5rem;
-      box-shadow: 0px 4px 25px rgb(8, 211, 225);
-      /* filter: drop-shadow(0px 0px 12px red); */
+      /* box-shadow: 0px 4px 25px rgb(8, 211, 225); */
+      /* filter: drop-shadow(0px 1px 5px rgb(200, 217, 255)); */
     }
     .sp::after{
       content: '';
@@ -1150,7 +1150,7 @@ p {
 
 
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
 
 
 
@@ -1173,3 +1173,118 @@ p {
     background-color: #4a90e2;
     border-radius: 2px;
     } */
+
+
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about {
+  padding: 80px 0;
+  /* background-color: #14151B; */
+}
+
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 400px;
+  margin-right: 40px;
+}
+
+.about-image img {
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+  /* background-color: white; */
+  /* border-radius: 10px; */
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
+}
+
+.about-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.namme {
+  color: #3498db;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.cl-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #3498db;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.cl-button:hover {
+  background-color: #2980b9;
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-image {
+    margin-right: 0;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.8rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .about {
+    padding: 60px 0;
+  }
+}
+
